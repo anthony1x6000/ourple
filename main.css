@@ -1,0 +1,244 @@
+:root {
+    --color1: #000000;
+    --color2: #150050;
+    --color3: #3F0071;
+    --color4: #610094;
+    --altcolor1: #1b0024;
+    --altcolor2: #a524fb;
+    --altcolor3: #ceafff;
+    --altcolor4: #ffb9f6;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #222222;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+  }
+@font-face {
+    font-family: akira;
+    src: url('src/font/akira_expanded/Akira\ Expanded\ Demo.otf');
+}
+@font-face {
+    font-family: enge;
+    src: url('src/font/engebrechtre/engebrechtre\ bd.ttf');
+}
+@font-face {
+    font-family: nesatho;
+    src: url('src/font/nesatho/Nesatho.ttf');
+}
+@font-face {
+    font-family: stretch;
+    src: url('src/font/stretch_pro/StretchPro.otf');
+}
+@font-face {
+    font-family: tsblock;
+    src: url('src/font/ts_block/TS\ Block\ Bold.ttf');
+}
+@font-face {
+    font-family: bebaskai;
+    src: url('src/font/bebas_kai/BebasKai.otf');
+}
+@font-face {
+    font-family: kenyan;
+    src: url('src/font/kenyancoffee/kenyan\ coffee\ rg.ttf');
+}
+@font-face {
+    font-family: ampero;
+    src: url('src/font/ampero/Ampero-Light.otf');
+}
+@font-face {
+    font-family: cyberia;
+    src: url('src/font/cyberia/cyberv2.ttf');
+}
+@font-face {
+    font-family: panton;
+    src: url('src/font/panton/Panton-LightCaps.otf');
+}
+::selection {
+    background: var(--color2);
+    color: var(--altcolor3);
+  }
+  ::-moz-selection {
+    background: var(--color2); 
+    color: var(--altcolor3);
+  }
+
+body {
+    /* background: url('img/grunge.svg') var(--altcolor2); */
+    /* background: url('img/grunge.svg'); */
+    background: url('img/grunge.svg'), linear-gradient(180deg, #af13ff 0%, #c913ff 25%);
+    background-size: 800px;
+    margin: 0;
+}
+#separator {
+    height: 2%;
+}
+.tbborder {
+    font-family: stretch;
+    font-size: 3vh;
+    position: relative;
+    top: 3px;
+    margin: 0 auto;
+    width: 43%;
+    /* border-image: url('img/horborder.svg') 27 round; */
+    /* border-bottom: 10px solid black; */
+}
+.maindiv {
+    /* padding-top: 5px; */
+    margin: 0 auto;
+    width: 40%;
+    /* border: solid 3px var(--color1); */
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+    /* border-image: url('img/verborder.svg') 27 repeat; */
+}
+.tTable {
+    width: 100%;
+    height: 150%;
+    border-collapse: collapse;
+}
+.tcells {
+    vertical-align: top;
+    padding-top: 19px;
+}
+.tA {
+    width: 20%;
+    
+    background-image: linear-gradient(black 80%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 2px 33px;
+    background-repeat: repeat-y;
+}
+.tB {
+    z-index: 999;
+    overflow: hidden;
+    width: 20%;
+
+    background-image: linear-gradient(black 80%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 2px 33px;
+    background-repeat: repeat-y;
+}
+.tC {
+    padding-left: 0.5%;
+    width: 60%;
+}
+.decbox {
+    /* height: 30%; */
+    width: 75%;
+    background: url('img/9.svg') var(--color1);
+    /* min-height: 500px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    /* background-size: fill; */
+    margin: 0 auto;
+    color: var(--altcolor2);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2%;
+    transition: all 0.5s;
+}
+.dectext {
+    font-family: akira;
+    text-align: center;
+    transition: all 0.5s;
+}
+.dectext:hover {
+    color: var(--altcolor3);
+}
+.decbox:hover {
+    color: var(--altcolor3);
+}
+.postbody {
+    background: url('img/9.svg') var(--color1);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+
+
+    margin: 0 auto;
+    width: 80%;
+    min-height: 15%;
+    margin-bottom: 5;
+    overflow: hidden;
+}
+#rottext {
+    z-index: 999;
+    position: relative;
+    writing-mode: vertical-rl;
+    margin: 10px auto;
+    font-family: panton;
+    font-size: 500%;
+    text-transform: uppercase;
+    border-bottom: solid 5px #000;
+    color: #000;
+}
+
+#coverheader {
+    display: none;
+    font-family: bebaskai;
+    color: var(--color2);
+    font-size: 3.3vh;
+    text-align: right;
+}
+#coolimg {
+    transition: all 0.5s;
+    display: none;
+}
+#randimg {
+    filter: brightness (0.8), saturate(15.5%);
+    transition: all 0.5s;
+    height: auto;
+    width: 100%;
+}
+.posttitle {
+    width: 100%;
+    padding: 5 5;
+    font-family: akira;
+    color: #fff;
+    border-bottom: solid 1px var(--altcolor2);
+}
+.postcontent {
+    text-transform: uppercase;
+    padding: 5 10;
+    font-family: ampero;
+    color: #fff;
+}
+/* Scanlines from systemspace.network - stolen code & image - sorry this is just too good*/
+/* body:after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    background-image: url('img/scan.png');
+    background-repeat: all;
+    background-position: 0px 0px;
+    animation-name: Static;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+@keyframes Static {
+    0% { background-position: 0px 0px; }
+    100% { background-position: 0px 4px; }
+} */
