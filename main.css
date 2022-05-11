@@ -8,6 +8,9 @@
     --altcolor3: #ceafff;
     --altcolor4: #ffb9f6;
 }
+* {
+    cursor: url('src/cursor/cur.png'), auto;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
