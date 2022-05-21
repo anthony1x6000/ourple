@@ -82,7 +82,8 @@
 body {
     /* background: url('img/grunge.svg') var(--altcolor2); */
     /* background: url('img/grunge.svg'); */
-    background: url('img/grunge.svg'), linear-gradient(180deg, #af13ff 0%, #c913ff 25%);
+    z-index: 0;
+    background: url('img/grunge.png'), linear-gradient(180deg, #af13ff 0%, #c913ff 25%);
     background-size: 800px;
     margin: 0;
 }
@@ -142,13 +143,14 @@ body {
 }
 .decbox {
     /* height: 30%; */
+    z-index: 1;
     width: 75%;
     background: url('img/9.svg') var(--color1);
-    /* min-height: 500px; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
-    /* background-size: fill; */
+
+    z-index: 1;
     margin: 0 auto;
     color: var(--altcolor2);
     text-align: center;
@@ -168,12 +170,12 @@ body {
     color: var(--altcolor3);
 }
 .postbody {
+    z-index: 1;
     background: url('img/9.svg') var(--color1);
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
-
 
     margin: 0 auto;
     width: 80%;
