@@ -44,12 +44,12 @@ function intro() {
     }
     `)
 
-    document.title = "Thanks! :)"
-    sleep(200)
-    document.title = "ourple"
+
     introplayed = true;
+    document.title = "ourple"
+
     window.scrollTo(0, 0);
-    type("убить себя. сейчас!", "#rottext")
+    type("убить себя. сейчас!", "#rottext")
 
     async function type(sentence, element) {
         // Keys
