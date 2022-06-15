@@ -49,7 +49,7 @@ function intro() {
     document.title = "ourple"
 
     window.scrollTo(0, 0);
-    type("убить себя. сейчас!", "#rottext")
+    type("РHellooooooooooooo", "#rottext")
 
     async function type(sentence, element) {
         // Keys
